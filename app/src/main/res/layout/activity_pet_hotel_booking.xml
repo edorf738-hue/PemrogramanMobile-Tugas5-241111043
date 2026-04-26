@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8EF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <TextView
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="‹"
+                android:textColor="#06172E"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Pet Hotel Booking"
+                android:textColor="#1E2A3A"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="26dp"
+            android:text="Choose Room Type"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/cardBasicRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_room_card_selected"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/basicTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basic Room  ✓"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2x2 m • Max 1 pet"
+                android:textColor="#203047"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Rp 50.000/night"
+                android:textColor="#FF4A00"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="✓  AC&#10;✓  Clean bedding&#10;✓  Food &amp; water&#10;✓  Daily cleaning"
+                android:textColor="#203047"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp" />
+        </LinearLayout>
+
+        <!-- Premium Room -->
+        <LinearLayout
+            android:id="@+id/cardPremiumRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_room_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/premiumTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Premium Room"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3x3 m • Max 2 pets"
+                android:textColor="#203047"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Rp 100.000/night"
+                android:textColor="#FF4A00"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="✓  AC&#10;✓  Premium bedding&#10;✓  Food &amp; water&#10;✓  Daily cleaning&#10;✓  Playground access&#10;✓  Photo updates"
+                android:textColor="#203047"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp" />
+        </LinearLayout>
+
+        <!-- VIP Suite -->
+        <LinearLayout
+            android:id="@+id/cardVipRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_room_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/vipTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIP Suite"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4x4 m • Max 3 pets"
+                android:textColor="#203047"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Rp 200.000/night"
+                android:textColor="#FF4A00"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="✓  Premium AC&#10;✓  Luxury bedding&#10;✓  Premium food&#10;✓  Daily cleaning&#10;✓  Private playground&#10;✓  Photo &amp; video updates&#10;✓  Grooming included&#10;✓  24/7 vet on call"
+                android:textColor="#203047"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp" />
+        </LinearLayout>
+
+        <!-- Pet Information -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_room_card"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Information"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Pet Name *"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/petNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_auth_input"
+                android:hint="eg"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Type *"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/petTypeInput"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_auth_input"
+                android:hint="cat"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Select Dates -->
+        <LinearLayout
+            android:id="@+id/dateSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_room_card"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅  Select Dates"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Check-in Date"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <CalendarView
+                android:id="@+id/checkInCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_auth_input" />
+
+            <TextView
+                android:id="@+id/checkInText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Pilih tanggal check-in"
+                android:textColor="#FF5A1F"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/checkOutContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check-out Date"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <CalendarView
+                    android:id="@+id/checkOutCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_auth_input" />
+
+                <TextView
+                    android:id="@+id/nightInfoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/bg_booking_pet"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:text="Pilih tanggal check-out"
+                    android:textColor="#FF4A00"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Special Request -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_room_card"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special Requests (Optional)"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/specialRequestInput"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_auth_input"
+                android:gravity="top"
+                android:hint="Any special needs or requests?"
+                android:padding="14dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Price Summary -->
+        <LinearLayout
+            android:id="@+id/priceSummaryCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_price_summary"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price Summary"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/summaryRoom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Room (Basic Room)"
+                    android:textColor="#203047"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/summaryRoomPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 50.000"
+                    android:textColor="#203047"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/summaryNight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1 night"
+                    android:textColor="#203047"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/summaryNightCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="× 1"
+                    android:textColor="#203047"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:background="#DADDE5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/summaryTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 50.000"
+                    android:textColor="#FF4A00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Confirm Button -->
+        <TextView
+            android:id="@+id/confirmBookingButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/bg_auth_button"
+            android:enabled="false"
+            android:alpha="0.55"
+            android:gravity="center"
+            android:text="Confirm Booking"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
