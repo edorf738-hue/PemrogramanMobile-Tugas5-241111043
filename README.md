@@ -1,17 +1,3 @@
-# PemrogramanMobile-Tugas5-241111043
-
-- Nama: Edo Rizki Firnando
-- NPM: 241111043
-
-## Fitur
-- Bottom Navigation
-- HomeFragment
-- Booking Pet Hotel
-- HistoryFragment
-- ProfileFragment
-
-## Screenshot Hasil Program
-
 ### Home
 ![Home](Halaman%20Home.png)
 
