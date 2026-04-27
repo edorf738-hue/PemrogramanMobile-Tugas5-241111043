@@ -1,11 +1,7 @@
-### Home
-![Home](Halaman%20Home.png)
+![Home](Halaman Home.png)
 
-### History
-![History](Halaman%20History.png)
+![History](Halaman History.png)
 
-### Profile
-![Profile](Halaman%20Profile.png)
+![Profile](Halaman Profile.png)
 
-### Booking
-![Booking](Halaman%20Booking.png)
+![Booking](Halaman Booking.png)
